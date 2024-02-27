@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital@1&display=swap');
+
+:root {
+    --cor-primaria: #0A2647;
+    --cor-segundaria: white;
+    --cor-terciaria: #2C74B3;
+    --cor-quarta: #205295;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o body */
+body {
+    background-color: var(--cor-primaria);
+    color: white;
+    margin: 10px;
+}
+
+/* Estilos para o título h1 */
+h1 {
+    margin-bottom: 7px;
+}
+
+/* Estilos para o parágrafo p */
+p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para o título de destaque */
+.Titulo-destaque {
+    color: var(--cor-quarta);
+}
+
+/* Estilos para a seção de apresentação */
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+/* Estilos para o conteúdo da apresentação */
+.apresentacao__conteudo {
+    width: 50%;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-size: 1,5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+/* Estilos para o título do conteúdo da apresentação */
+.apresentacao__conteudo__titulo {
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 2.25rem;
+}
+
+/* Estilos para o parágrafo do conteúdo da apresentação */
+.apresentacao__conteudo__paragrafo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.37rem;
+}
+
+/* Estilos para os links da apresentação */
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 17px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.37rem;
+}
+
+/* Estilos para o link da apresentação */
+.apresentacao__links__link {
+    border: 3px solid var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    background-color: var(--cor-primaria);
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: center;
+    border-radius: 17px;
+    padding: 22px 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.apresentacao__img {
+    width: 50%;
+}
+
+.apresentacao__links__link:hover {
+    background-color:#2C74B3 ;
+    font-size: 1.68rem;
+}
+
+.rodape {
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+}
+.nome__curriculo {
+    font-family:'Montserrat', sans-serif;
+    font-size: 2,93;
+}
+@media (max-width: 1200px) {
+    .cabecalho { padding: 10px;
+    }
+    
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
+
